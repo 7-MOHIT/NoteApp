@@ -1,5 +1,6 @@
 package com.example.a666
 
+import NoteScreen
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -22,7 +23,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             _666Theme {
               Surface(){
-
+                  NoteScreen()
               }
             }
         }
