@@ -14,7 +14,10 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.a666.model.Note
 import com.example.a666.ui.theme._666Theme
+
+
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,7 +26,11 @@ class MainActivity : ComponentActivity() {
         setContent {
             _666Theme {
               Surface(){
-                  NoteScreen()
+                  NoteScreen(
+                     notes = emptyList(),
+                      onAddNote = {},
+                      onRemoveNote = {}
+                  )
               }
             }
         }
