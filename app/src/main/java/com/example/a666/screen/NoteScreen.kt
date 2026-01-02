@@ -86,29 +86,9 @@ fun NoteScreen(
     val scrollState = rememberScrollState()
     val context = LocalContext.current
 
-//    val notes = remember {
-//        mutableStateListOf(
-//            Note(
-//                title = "First Note",
-//                description = "Hello JetPack compose , This is me Mohit Jangra , And i am here to learn you ,so that i can make a clear user interface for my apps ,Hello JetPack compose , This is me Mohit Jangra , And i am here to learn you ,so that i can make a clear user interface for my apps"
-//            ),
-//            Note(
-//                title = "First Note",
-//                description = "Hello JetPack compose , This is me Mohit Jangra , And i am here to learn you ,so that i can make a clear user interface for my apps "
-//            ),
-//            Note(
-//                title = "First Note",
-//                description = "Hello JetPack compose , This is me Mohit Jangra , And i am here to learn you ,so that i can make a clear user interface for my apps "
-//            ),
-//            Note(
-//                title = "First Note",
-//                description = "Hello JetPack compose , This is me Mohit Jangra , And i am here to learn you ,so that i can make a clear user interface for my apps "
-//            ),
-//        )
-//    }
+
     Column(
         modifier = Modifier
-            .padding(6.dp)
             .verticalScroll(scrollState)
     ) {
         TopAppBar(
@@ -247,7 +227,7 @@ fun NoteButton(
                 enabled = enabled,
                 modifier = Modifier,
                 colors = ButtonDefaults.buttonColors(
-                    containerColor = Color(0xFFB194E7), // Background color
+                    containerColor = Color(0xFFC4AFEC), // Background color
                     contentColor = Color.Blue          // Text/Icon color
                 )
             ) {
